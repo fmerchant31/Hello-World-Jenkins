@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                echo "print(Hello World! jenkins)" > hello-world.py
+                sh 'echo \'print("hello!")\' > hello.py'
+                sh 'python3 hello.py'
             }
         }
     }
