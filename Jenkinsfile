@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                echo 'Hello World!(Jenkins)'
+                echo "Hello World!(Jenkins)" > hello-world.py
             }
         }
     }
