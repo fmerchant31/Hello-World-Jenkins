@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                sh 'echo \'print("hello!")\' > hello.py'
+                sh 'echo \'print("helloWorld!")\' > hello.py'
             }
         }
         stage('Build') {
